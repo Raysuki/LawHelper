@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #8f482f;
+  --color-primary-active: #A9583E;
+  --color-canvas: #FAF9F5;
+  --color-ink: #141413;
+  --color-body: #141413;
+  --color-muted: #6C6A64;
+  --color-muted-soft: #8E8B82;
+  --color-hairline: #E6DFD8;
+  --color-hairline-soft: #EBE6DF;
+  --color-surface: #fff8f6;
+  --color-surface-soft: #F5F0E8;
+  --color-surface-card: #EFE9DE;
+  --color-surface-cream-strong: #E8E0D2;
+  --color-accent-teal: #5DB8A6;
+  --color-accent-amber: #E8A55A;
+
+  --font-serif: "Newsreader", serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-canvas text-body font-sans antialiased;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.editorial-shadow {
+  box-shadow: 0 4px 20px -2px rgba(20,20,19,0.08);
+}
+
+.editor-content h1, .editor-content h2, .editor-content h3 {
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+.editor-content h1 { font-size: 1.2rem; }
+.editor-content h2 { font-size: 1.1rem; }
+.editor-content h3 { font-size: 1.0rem; }
+.editor-content p { margin-bottom: 0.5em; }

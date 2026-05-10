@@ -1,0 +1,30 @@
+{
+  "searchInput": [
+    "input.searchKey.search-inp",
+    "#qbValue",
+    "textarea#suggestContent"
+  ],
+  "searchButton": [
+    ".search-rightBtn.search-click",
+    "#searchBtn",
+    "a#searchBtn"
+  ],
+  "captcha": [
+    "text=验证码",
+    "iframe[title*='captcha']",
+    ".geetest_holder",
+    ".captcha",
+    "input[placeholder*='验证码']"
+  ],
+  "login": [
+    "text=登录",
+    "text=注册",
+    "a.load",
+    "#contentIframe",
+    ".load-con"
+  ],
+  "loggedIn": [
+    "text=欢迎您",
+    "a[href*='open=login']"
+  ]
+}

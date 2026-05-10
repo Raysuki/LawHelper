@@ -1,0 +1,29 @@
+{
+  "skills": {
+    "load": {
+      "extraDirs": [
+        "D:/LawHelper/skills"
+      ],
+      "watch": true
+    },
+    "entries": {
+      "cn-judgments-fetcher": {
+        "enabled": true,
+        "env": {
+          "OPENAI_API_KEY": "your-api-key",
+          "OPENAI_BASE_URL": "https://api.openai.com/v1",
+          "OPENAI_MODEL": "gpt-4.1-mini",
+          "WENSHU_BASE_URL": "https://wenshu.court.gov.cn",
+          "WENSHU_BROWSER_MODE": "cdp",
+          "WENSHU_CHROME_CDP_URL": "http://127.0.0.1:9222",
+          "WENSHU_CHROME_EXECUTABLE": "C:/Program Files/Google/Chrome/Application/chrome.exe",
+          "WENSHU_USER_DATA_DIR": "D:/LawHelper/.wenshu/browser-profile",
+          "WENSHU_HEADLESS": "false",
+          "WENSHU_HITL_MODE": "manual",
+          "WENSHU_CAPTCHA_WAIT_MINUTES": "10",
+          "WENSHU_MAX_RESULTS": "5"
+        }
+      }
+    }
+  }
+}

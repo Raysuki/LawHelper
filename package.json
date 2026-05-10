@@ -1,0 +1,27 @@
+{
+  "name": "lawhelper",
+  "version": "1.0.0",
+  "description": "OpenClaw + Playwright legal case retrieval scaffold for China Judgments Online",
+  "type": "module",
+  "main": "src/cli.js",
+  "scripts": {
+    "search": "node src/cli.js",
+    "probe": "node src/probe.js",
+    "chrome:start": "node src/chrome-start.js",
+    "login:wenshu": "node src/manual-login.js",
+    "demo": "node src/demo-search.js",
+    "web:dev": "npm --prefix 稽案录 run dev",
+    "web:build": "npm --prefix 稽案录 run build",
+    "web:lint": "npm --prefix 稽案录 run lint",
+    "check": "node --check src/cli.js && node --check src/nlu.js && node --check src/schema.js && node --check src/wenshu-client.js",
+    "test": "npm run check"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.4.1",
+    "playwright": "^1.59.1",
+    "zod": "^4.3.6"
+  }
+}
